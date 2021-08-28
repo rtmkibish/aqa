@@ -1,0 +1,1 @@
+## To view the result of the homework just run the App.java class
