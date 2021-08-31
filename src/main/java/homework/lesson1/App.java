@@ -1,4 +1,4 @@
-package lesson1;
+package homework.lesson1;
 
 /**
  * @author Artem Kibish
