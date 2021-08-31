@@ -1,1 +1,1 @@
-## To view the result of the homework just run the App.java class
+## To view the result of the homework just run the App.java class from the according homework package
