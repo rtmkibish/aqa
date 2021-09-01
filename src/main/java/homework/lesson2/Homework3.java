@@ -7,6 +7,8 @@ public class Homework3 {
         firstTask();
         secondTask();
         thirdTask();
+        fourthTask();
+        fifthTask();
     }
 
     public void firstTask() {
@@ -86,26 +88,23 @@ public class Homework3 {
         b = scanner.nextInt();
         System.out.print("Input a value for the 'c' number: ");
         c = scanner.nextInt();
+        scanner.close();
         descriminant = calculateDescriminant(a, b, c);
         if (0 == b && 0 == c) {
-            System.out.printf("The root for the %dx^2 + %dx + %d equation is: x=%.4f", a, b, c, 0);
-        } else if (0 == b) {
-            //TODO: implement calculation
-        } else if (0 == c) {
-            //TODO: implement calculation
+            x1 = 0;
+            System.out.printf("The root of the %dx^2 + %dx + %d equation is: x=%.4f", a, b, c, x1);
+            return;
         }
-        
         if (descriminant > 0) {
             x1 = (-b + Math.sqrt(descriminant)) / (2 * a);
             x2 = (-b - Math.sqrt(descriminant)) / (2 * a);
-            System.out.printf("The roots for the %dx^2 + %dx + %d equation is: x1=%.4f and x2=%.4f\n", a, b, c, x1, x2);
+            System.out.printf("The roots of the %dx^2 + %dx + %d equation is: x1=%.4f and x2=%.4f\n", a, b, c, x1, x2);
         } else if (descriminant == 0) {
-            x1 = -b / (2 * b);
-            System.out.printf("The root for the %dx^2 + %dx + %d equation is: x=%.4f", a, b, c, x1);
+            x1 = -b / (2 * a);
+            System.out.printf("The root of the %dx^2 + %dx + %d equation is: x=%.4f", a, b, c, x1);
         } else {
             System.err.println("The equation does not have roots!");
         }
-        scanner.close();
     }
 
     private double calculateDescriminant(int a, int b, int c) {
