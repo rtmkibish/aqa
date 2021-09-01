@@ -34,7 +34,6 @@ public class Homework3 {
         cilinderRadius = scanner.nextDouble();
         cilinderVolume = Math.PI * Math.pow(cilinderRadius, 2) * cilinderHeight;
         System.out.println("The volume of the cilinder is: " + cilinderVolume);
-        scanner.close();
     }
 
     public void thirdTask() {
@@ -48,7 +47,6 @@ public class Homework3 {
         hexValue = scanner.next();
         decimalValue = Integer.parseInt(hexValue, 16);
         System.out.printf("The hexadecimal value '%s' has the next decimal value: %d\n", hexValue, decimalValue);
-        scanner.close();
     }
 
     public void fourthTask() {
@@ -88,7 +86,6 @@ public class Homework3 {
         b = scanner.nextInt();
         System.out.print("Input a value for the 'c' number: ");
         c = scanner.nextInt();
-        scanner.close();
         descriminant = calculateDescriminant(a, b, c);
         if (0 == b && 0 == c) {
             x1 = 0;
