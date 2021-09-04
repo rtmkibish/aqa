@@ -140,7 +140,7 @@ public class Homework6 {
         System.out.print("Input the character: ");
         targetSymbol = scanner.next().charAt(0);
 
-        if (targetSymbol >= 48 && targetSymbol <= 53) {
+        if (targetSymbol >= 48 && targetSymbol <= 57) {
             System.out.println("The character is a digit.");
         } else {
             System.out.println("The character IS NOT a digit.");
@@ -382,7 +382,7 @@ public class Homework6 {
         System.out.print("Input the character: ");
         targetSymbol = scanner.next().charAt(0);
 
-        resultToDisplay = (targetSymbol >= 48 && targetSymbol <= 53) ? "The character is a digit."
+        resultToDisplay = (targetSymbol >= 48 && targetSymbol <= 57) ? "The character is a digit."
                 : "The character IS NOT a digit.";
         System.out.println(resultToDisplay);
     }
