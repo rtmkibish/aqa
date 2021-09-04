@@ -6,7 +6,21 @@ public class Homework6 {
     private Scanner scanner = new Scanner(System.in);
 
     public void done() {
-
+        firstTask();
+        secondTask();
+        thirdTask();
+        fourthTask();
+        fifthTask();
+        sixthTask();
+        seventhTask();
+        eighthTask();
+        ninethTask();
+        tenthTask();
+        eleventhTask();
+        twelfthTask();
+        thirteenthTask();
+        forteenthTask();
+        fifteenthTask();
     }
 
     public void firstTask() {
