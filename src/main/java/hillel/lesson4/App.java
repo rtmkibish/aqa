@@ -6,10 +6,13 @@ public class App {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        luckyTicket();
         quarterNumber();
     }
 
     private static void luckyTicket() {
+        System.out.println(
+                "Ввести с клавиатуры номер трамвайного (троллейбусного) билета и определить является ли он счастливым.");
         System.out.print("input a train ticket: ");
         int tramTicketId = scanner.nextInt();
         int lastDigit = tramTicketId % 10;
@@ -28,21 +31,23 @@ public class App {
     }
 
     private static void quarterNumber() {
+        System.out.println(
+                "Ввести координаты точки (x, y) и определить номер четверти, в которую попала эта точка. Также необходимо предусмотреть случай попадания точки на оси или в начало координат.");
         System.out.print("input x: ");
         int x = scanner.nextInt();
         System.out.print("input y: ");
         int y = scanner.nextInt();
 
         if (x <= 0 && y > 0) {
-            System.out.println("First");
+            System.out.println("First quarter");
         } else if (x > 0 && y >= 0) {
-            System.out.println("Second");
+            System.out.println("Second quarter");
         } else if (x < 0 && y <= 0) {
-            System.out.println("Third");
+            System.out.println("Third quarter");
         } else if (x >= 0 && y < 0) {
-            System.out.println("Fourth");
+            System.out.println("Fourth quarter");
         } else {
-            System.out.println("Zero");
+            System.out.println("Zero point");
         }
     }
 }
