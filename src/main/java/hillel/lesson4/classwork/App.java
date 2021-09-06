@@ -1,4 +1,4 @@
-package hillel.lesson4;
+package hillel.lesson4.classwork;
 
 import java.util.Scanner;
 
