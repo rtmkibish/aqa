@@ -1,8 +1,17 @@
 package homework.lesson4.homework8;
 
+import java.util.Scanner;
+
 public class TaskTwo {
     public static void main(String[] args) {
-        getTribonachiSequence(20);
+        System.out.println("Write a program called Tribonacci to print Tribonacci numbers");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input a Tribonachi sequance size: ");
+        int size = scanner.nextInt();
+        getTribonachiSequence(size);
+
+        scanner.close();
     }
 
     private static void getTribonachiSequence(int sequenceLength) {
@@ -18,6 +27,6 @@ public class TaskTwo {
             }
             System.out.print(result[i] + ", ");
         }
-        System.out.println(result);
+        System.out.println();
     }
 }

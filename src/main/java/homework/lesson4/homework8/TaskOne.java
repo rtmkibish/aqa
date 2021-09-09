@@ -1,8 +1,18 @@
 package homework.lesson4.homework8;
 
+import java.util.Scanner;
+
 public class TaskOne {
     public static void main(String[] args) {
-        System.out.println(getElierNumber(67));
+        System.out.println(
+                "Write a program to compute the value of Eiler number, using the following series expansion. Use the maximum denominator as the terminating condition.");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input the max denominator: ");
+        int maxDenominator = scanner.nextInt();
+        System.out.println(getElierNumber(maxDenominator));
+
+        scanner.close();
     }
 
     private static long factorial(int n) {
